@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald">
+    <title>Document</title>
+    <style>
+      * {
+            box-sizing: border-box;
+        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }  
+      .all-employee {
+        background-color: rgb(111,227,219);
+        padding: 100px;
+        margin: 100px;
+                 }
+      header {
+        background-color: rgb(44,67,93);
+        font-family: Oswald;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255,227,132);
+      }
+      section{
+        display: -webkit-flex;
+        display: flex;
+      }
+      nav{
+        
+        flex: 1;
+        background: rgb(44,67,93);
+        padding: 30px;
+        color: whitesmoke;
+        font-size: 24px;
+      }
+    
+      nav ul{
+        list-style-type: none;
+        padding: 10px;
+      }
+      
+      article {
+         
+        flex: 1;
+        background: rgb(44,67,93);
+        padding: 75px;
+        color: whitesmoke; 
+        }
+       
+         input[type=text] {
+             background: transparent;
+             border: none;
+             outline: none;
+             border-bottom: 1px solid ;
+             color: rgb(244,243,241);
+             
+        }  
+        input[type='radio'] {
+            height: 25px;
+            width: 25px;
+            color: rgb(223,198,127);
+            position: relative;
+            font-size: 35px;
+            
+            }
+         
+        input[type='submit']{
+            height: 60px;
+            width: 190px;
+            position: relative;
+            background-color: rgb(255,227,132);
+            border-radius: 64px;
+            font-size: 25px;
+        }    
+        footer {
+             background-color:rgb(44,67,93);
+             padding: 50px;
+             text-align: center;
+            
+                }    
+
+        @media (max-width: 600px) {
+     section {
+        -webkit-flex-direction: column;
+         flex-direction: column;
+         }}
+    </style>
+</head>
+<body>
+    <article class="all-employee">
+    <header>
+        <h1>Employee Emergency Information </h1>
+        <P style="color: whitesmoke;font-size: 23px;">we ll use these details only guring emergency situatio.please give you accurate information</P>
+    </header>
+    
+    <section>
+        <nav>
+            <ul>
+                <li>Full name <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li> Age  <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li> Blood groups <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li> Emergency contact number <span style=color:rgb(255,56,88)>*</span></li><br><br><br> 
+                <li>Do you have any long term illenss? <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li>Do you have a medical insurance? <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li>who's your insurance agent? <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li>have you ever claimed insurance? <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li>who's your nonminee <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li>what's your insurance company <span style=color:rgb(255,56,88)>*</span></li><br><br><br>
+                <li>Have you undergone any surgery <span style=color:rgb(255,56,88)>*</span></li>
+            </ul>
+        </nav>
+
+        <article>
+            <form >
+                <input type="text" id="fname" name="fname" size="22">
+                <label for="fname" >firstname </label>
+                <input type="text" id="lname" name="lname" size="22">
+                <label for="lname" >lastname </label> <br><br><br><br><br>
+
+                <br>
+                <input type="text" id="age" name="age"  maxlength="3" size="70"><br><br>
+                <br><br><br><br>
+
+                <input type="text" id="blood" name="blood" size="70">
+                <br><br><br><br><br><br><br>
+
+                <input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" size="70" >
+                <br><br><br><br><br><br><br><br><br>
+
+                <input type="radio" id="longterm" name="long_term" size="20" >
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">Yes </span> </label> 
+                <input type="radio" id="longterm" name="long_term" size="20" > 
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">No </span> </label> 
+                <br><br><br><br><br><br><br><br>
+
+                <input type="radio" id="medical" name="medical" size="20" >
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">Yes </span> </label> 
+                <input type="radio" id="medical" name="medical" size="20" > 
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">No </span> </label> 
+                <br><br><br><br><br><br><br><br><br>
+
+                <input type="text" id="agent" name="agent" size="70">
+                <br><br><br><br><br><br><br><br>
+
+                <input type="radio" id="claimed" name="claimed" size="20" >
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">Yes </span> </label> 
+                <input type="radio" id="claimed" name="claimed" size="20" > 
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">No </span> </label> 
+                <br><br><br><br><br><br><br><br><br>
+
+                <input type="text" id="naminee" name="nonminee" size="70">
+                <br><br><br><br><br><br><br><br>
+
+                <input type="text" id="company" name="company" size="70">
+                <br><br><br><br><br><br><br><br><br>
+
+                <input type="radio" id="surgery" name="surgery" size="20" >
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">Yes  </span></label> 
+                <input type="radio" id="surgery" name="surgery" size="20" > 
+                <label for="longterm"><span style="color: rgb(255,245,135);font-size: 19px;">No </span></label> 
+
+            </form>
+        </article>
+    </section>
+
+    <footer>
+       
+            <input type="submit"  value="Submit"  >
+            
+    </footer>
+
+</article>
+</body>
+</html>
